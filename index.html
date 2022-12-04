@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naseef Mashood</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -15,16 +16,21 @@
     <!-- Hero Section -->
     <section id="hero-section">
         <div class="container">
-            <h1>Mohammed Naseef Bin Mashood</h1>
-            <h2>Hi, I'm a Web Developer</h2>
+            <div class="screen-skewed">
+                <h1>Mohammed <br><span class="secondary-text">Naseef</span><br>Bin Mashood</h1>
+                <h2>Hi, I'm a Web Developer</h2>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.svg">
+            </div>
         </div>
     </section>
     <!-- Hero Section End -->
 
     <!-- Skills -->
-    <section id="skill-section">
+    <section id="skills-section">
         <div class="container">
-            <h2>My Skills</h2>
+            <h2>My <span class="primary-text">Skills</span></h2>
             <ul>
                 <li>HTML5</li>
                 <li>CSS3</li>
@@ -40,24 +46,30 @@
     <!-- Projects -->
     <section id="projects-section">
         <div class="container">
-            <h2>My Projects</h2>
+            <h2>My <span class="primary-text">Projects</span></h2>
             <ul>
                 <li>
                     <h3>markOne: Do You Know Me?</h3>
                     <small>2nd December 2022</small>
-                    <p>A small quiz made about myself as part of the neoG Camp levelZero projects</p>
-                    <a href="https://replit.com/@nosfeeferatu/DoYouKnowMe?embed=1&output=1" target="_blank" class="primary-btn">View Project</a>
-                    <a href="https://github.com/nosfeeferatu/do-you-know-me" target="_blank" class="secondary-btn">View Source</a>
+                    <p>A small quiz made about myself as part of the neoG Camp levelZero projects.</p>
+                    <div class="project-btns">
+                        <a href="https://replit.com/@nosfeeferatu/DoYouKnowMe?embed=1&output=1" target="_blank" class="primary-btn">View Project</a>
+                        <a href="https://github.com/nosfeeferatu/do-you-know-me" target="_blank" class="secondary-btn">View Source</a>
+                    </div>
                 </li>
                 <li>
                     <h3>markTwo: Do You Know Movies?</h3>
                     <small>2nd December 2022</small>
-                    <p>A quiz on Hollywood movies made as part of the neoG Camp levelZero projects</p>
-                    <a href="https://replit.com/@nosfeeferatu/DoYouKnowMovies?embed=1&output=1" target="_blank" class="primary-btn">View Project</a>
-                    <a href="https://github.com/nosfeeferatu/do-you-know-movies" target="_blank" class="secondary-btn">View Source</a>
+                    <p>A quiz on Hollywood movies made as part of the neoG Camp levelZero projects.</p>
+                    <div class="project-btns">
+                        <a href="https://replit.com/@nosfeeferatu/DoYouKnowMovies?embed=1&output=1" target="_blank" class="primary-btn">View Project</a>
+                        <a href="https://github.com/nosfeeferatu/do-you-know-movies" target="_blank" class="secondary-btn">View Source</a>
+                    </div>
                 </li>
             </ul>
-            <a href="#">More Projects</a>
+            <div class="more-btn">
+                <a href="#" class="primary-btn">More Projects</a>
+            </div>
         </div>
     </section>
     <!-- Projects End -->
@@ -65,9 +77,13 @@
     <!-- Blogs -->
     <section id="blogs-section">
         <div class="container">
-            <h2>My Blogs</h2>
-            <p>How I started in the Computer field? What I've been learning? I've written blogs on these that you can find by clicking on the button below</p>
-            <a href="#">View Blogs</a>
+            <h2>My <span class="primary-text">Blogs</span></h2>
+            <div class="content">
+                <p>How did I get started in the Computer field? <br>What have I been learning? <br>I've written blogs on these that you can find by clicking on the button below.</p>
+                <div class="more-btn">
+                    <a href="#" class="primary-btn">View Blogs</a>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Blogs End -->

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-color: #0d9488;
+    --secondary-color: #2dd4bf;
+    --gray-color: #efefefc8;
+}
+
+body{
+    font-family: 'Alexandria', sans-serif;
+    margin: 0;
+}
+
+.container{
+    padding: 0 6rem;
+}
+
+.primary-text{
+    color: var(--primary-color);
+}
+
+.secondary-text{
+    color: var(--secondary-color);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+h2:not(#hero-section h2){
+    font-size: 3.3rem;
+}
+
+h3{
+    margin: 0;
+}
+
+/* BUTTONS */
+
+a{
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.project-btns{
+    float: right;
+}
+
+.project-btns a:hover{
+    text-decoration: underline;
+}
+
+.primary-btn{
+    background-color: var(--primary-color);
+    color: white;
+    margin: 0.5rem;
+}
+
+.secondary-btn{
+    color: var(--primary-color);
+}
+
+.more-btn{
+    text-align: center;
+    margin: 4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.more-btn a{
+    transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, font-weight 0.2s ease-in-out; 
+
+}
+
+.more-btn a:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 5px 5px var(--primary-color);
+    font-weight: 800;
+}
+
+/* HERO SECTION */
+
+.screen-skewed{
+    color: white;
+    position: absolute;
+    left: 36.5rem;
+    top: 15rem;
+    z-index: 3;
+    transform: skew(12deg, 354deg);
+}
+
+#hero-section .container{
+    padding: 0;
+}
+
+.hero-image{
+    height: 150vh;
+}
+
+#hero-section img{
+    position: relative;
+    z-index: 2;
+}
+
+#hero-section h1{
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+/* SKILLS SECTION */
+
+#skills-section::before{
+    content: '';
+    background-color: var(--gray-color);
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    top: 51rem;
+    left: 0;
+}
+
+#skills-section h2{
+    position: absolute;
+    left: 16.5rem;
+    bottom: -23.5rem;
+    z-index: 3;
+    transform: skew(25deg, 349deg) rotate(1deg);
+}
+
+#skills-section ul{
+    width: 50%;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 10rem;
+    left: 34rem;
+    z-index: 5;
+}
+
+#skills-section li{
+    color: white;
+    background-color: var(--primary-color);
+    text-align: center;
+    flex-basis: 10rem;
+    padding: 1rem;
+    border: 2px solid black;
+    font-size: 17px;
+    /* transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out; */
+}
+
+#skills-section li:hover{
+    color: black;
+    background-color: var(--gray-color);
+    box-shadow: 5px 5px var(--primary-color);
+}
+
+/* PROJECTS SECTION */
+
+#projects-section h2, #blogs-section h2{
+    text-align: center;
+}
+
+#projects-section li{
+    padding: 2rem;
+    border: 2px solid black;
+    box-shadow: 5px 5px var(--primary-color);
+}
+
+/* BLOGS SECTION */
+
+#blogs-section {
+    background-color: var(--gray-color);
+    min-height: fit-content;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#blogs-section .content{
+    padding: 2rem;
+    border: 2px solid black;
+    box-shadow: 5px 5px var(--primary-color);
+}
+
+#blogs-section .more-btn{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
