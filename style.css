@@ -32,6 +32,7 @@ ul{
 
 h2:not(#hero-section h2){
     font-size: 3.3rem;
+    text-align: center;
 }
 
 h3{
@@ -73,7 +74,7 @@ a{
 
 .more-btn a{
     transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, font-weight 0.2s ease-in-out; 
-
+    
 }
 
 .more-btn a:hover{
@@ -85,24 +86,25 @@ a{
 
 /* HERO SECTION */
 
-.screen-skewed{
-    color: white;
-    position: absolute;
-    left: 36.5rem;
-    top: 15rem;
-    z-index: 3;
-    transform: skew(12deg, 354deg);
+#hero-section .container{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
 }
 
-#hero-section .container{
-    padding: 0;
+.hero-title{
+    margin-left: 3rem;
 }
 
 .hero-image{
-    height: 150vh;
+    width: 60%;
+    text-align: end;
 }
 
 #hero-section img{
+    width: 90%;
     position: relative;
     z-index: 2;
 }
@@ -113,32 +115,16 @@ a{
 }
 
 /* SKILLS SECTION */
-
-#skills-section::before{
-    content: '';
+#skills-section{
     background-color: var(--gray-color);
-    height: 55%;
-    width: 100%;
-    position: absolute;
-    top: 51rem;
-    left: 0;
-}
-
-#skills-section h2{
-    position: absolute;
-    left: 16.5rem;
-    bottom: -23.5rem;
-    z-index: 3;
-    transform: skew(25deg, 349deg) rotate(1deg);
+    min-height: fit-content;
+    padding: 1rem 0 5rem;
 }
 
 #skills-section ul{
     width: 50%;
+    margin: auto;
     flex-wrap: wrap;
-    position: relative;
-    bottom: 10rem;
-    left: 34rem;
-    z-index: 5;
 }
 
 #skills-section li{
@@ -160,10 +146,6 @@ a{
 
 /* PROJECTS SECTION */
 
-#projects-section h2, #blogs-section h2{
-    text-align: center;
-}
-
 #projects-section li{
     padding: 2rem;
     border: 2px solid black;
@@ -175,7 +157,7 @@ a{
 #blogs-section {
     background-color: var(--gray-color);
     min-height: fit-content;
-    padding: 1rem 0;
+    padding: 1rem 0 3rem;
     text-align: center;
 }
 
@@ -188,4 +170,24 @@ a{
 #blogs-section .more-btn{
     margin-top: 3rem;
     margin-bottom: 1rem;
+}
+
+/* Animation */
+
+.blink{
+    animation: blink 0.4s linear infinite;
+}
+
+@keyframes blink {
+    0%{
+       opacity: 0; 
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
 }
