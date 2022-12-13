@@ -84,6 +84,10 @@ a{
     font-weight: 800;
 }
 
+.gray-bg{
+    background-color: var(--gray-color);
+}
+
 /* NAVBAR */
 header{
     background-color: var(--primary-color);
@@ -148,7 +152,6 @@ nav{
 
 /* SKILLS SECTION */
 #skills-section{
-    background-color: var(--gray-color);
     min-height: fit-content;
     padding: 1.5rem 0 6rem;
 }
@@ -187,7 +190,6 @@ nav{
 /* BLOGS SECTION */
 
 #blogs-section {
-    background-color: var(--gray-color);
     min-height: fit-content;
     padding: 2rem 0 4rem;
 }
@@ -247,6 +249,41 @@ footer a{
     color: white;
     margin: 0;
     padding: 1rem;
+}
+
+/* PROJECTS PAGE */
+.project-page{
+    padding: 5rem 0;
+}
+
+.projects{
+    padding: 2rem;
+    border: 2px solid black;
+    box-shadow: 5px 5px var(--primary-color);
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.projects .project-btns{
+    float: unset;
+    margin-top: 2rem;
+}
+
+.projects ul{
+    display: block;
+    list-style: disc;
+    width: fit-content;
+    margin: 1rem auto;
+    text-align: start;
+}
+
+.projects li{
+    padding: 0.5rem;
+}
+
+.projects .more-btn{
+    margin: 1.5rem;
 }
 
 /* Animation */
