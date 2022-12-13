@@ -251,7 +251,7 @@ footer a{
     padding: 1rem;
 }
 
-/* PROJECTS PAGE */
+/* PROJECTS AND BLOG PAGE */
 .project-page{
     padding: 5rem 0;
 }
@@ -284,6 +284,12 @@ footer a{
 
 .projects .more-btn{
     margin: 1.5rem;
+}
+
+.projects img{
+    width: 70%;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
 }
 
 /* Animation */
