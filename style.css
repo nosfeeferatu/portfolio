@@ -286,10 +286,23 @@ footer a{
     margin: 1.5rem;
 }
 
-.projects img{
+.projects img, .blog-inner img{
     width: 70%;
     margin-bottom: 2rem;
     border-radius: 1rem;
+}
+
+.blog-inner img{
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.blog-inner{
+    padding: 2rem;
+    border: 2px solid black;
+    box-shadow: 5px 5px var(--primary-color);
+    width: 80%;
+    margin: auto;
 }
 
 /* Animation */
