@@ -28,6 +28,7 @@ ul{
     display: flex;
     gap: 1.5rem;
     padding: 0;
+    justify-content: center;
 }
 
 h2:not(#hero-section h2){
@@ -49,6 +50,8 @@ a{
 
 .project-btns{
     float: right;
+    margin: 1rem;
+    text-align: center;
 }
 
 .project-btns a:hover{
@@ -67,7 +70,7 @@ a{
 
 .more-btn{
     text-align: center;
-    margin: 4rem;
+    margin: 4rem 0;
     font-size: 1.1rem;
     font-weight: 500;
 }
@@ -181,10 +184,11 @@ nav{
 
 /* PROJECTS SECTION */
 
-#projects-section li{
+#projects-section li, #blogs-section li{
     padding: 2rem;
     border: 2px solid black;
     box-shadow: 5px 5px var(--primary-color);
+    flex-basis: 50%;
 }
 
 /* BLOGS SECTION */
@@ -192,12 +196,6 @@ nav{
 #blogs-section {
     min-height: fit-content;
     padding: 2rem 0 4rem;
-}
-
-#blogs-section li{
-    padding: 2rem;
-    border: 2px solid black;
-    box-shadow: 5px 5px var(--primary-color);
 }
 
 #blogs-section .more-btn{
@@ -322,5 +320,80 @@ footer a{
 
     100%{
         opacity: 0;
+    }
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px){
+    #projects-section li, #blogs-section li{
+        flex-basis: 80%;
+    }
+    ul:not(footer ul){
+        flex-wrap: wrap;
+    }   
+    #skills-section ul{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav-logo{
+        display: none;
+    } 
+    nav{
+        justify-content: center;
+    }
+    #projects-section li, #blogs-section li{
+        flex-basis: unset
+    }
+    .project-btns a{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hero-image{
+        width: 100%;
+    }
+    #hero-section img{
+        width: 100%;
+        padding-top: 5rem;
+    }
+    #hero-section h1{
+        font-size: 2.6rem;
+    }
+    #hero-section h2{
+        font-size: 1.4rem;
+    }
+    h2:not(#hero-section h2){
+        font-size: 2.5rem;
+    }
+    footer h3{
+        font-size: 1.5rem;
+    }
+    .hero-title{
+        margin: 0.2rem;
+        margin-top: -3rem;
+    }
+    #hero-section .container{
+        padding: 0 2rem;
+        flex-wrap: wrap-reverse;
+    }
+    .container{
+        padding: 0 2rem;
+    }
+    .project-btns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: unset;
+    }
+    .projects, .blog-inner{
+        padding: 1rem;
+        width: unset;
+    }
+    .projects img, .blog-inner img{
+        width: 100%;
     }
 }
