@@ -1,7 +1,7 @@
 # markFour
 ## Portfolio
 
-A Portfolio Website consisting of my neoG Camp projects and blogs. Currently not mobile responsive.
+A Portfolio Website consisting of my neoG Camp projects and blogs.
 
 ## Used:
 
